@@ -89,14 +89,48 @@ export const constantRoutes = [
       }
     ]
   },
-
+  {
+    path: '/classify',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: '分类标签管理',
+        component: () => import('@/views/classify-manage/index'),
+        meta: { title: '分类标签管理', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/artilce',
+    component: Layout,
+    name: 'Article',
+    meta: {
+      title: '文章管理',
+      icon: 'nested'
+    },
+    children: [
+      {
+        path: 'list',
+        name: '文章列表',
+        component: () => import('@/views/article-manage/view-list/index'),
+        meta: { title: '文章列表', icon: 'form' }
+      },
+      {
+        path: 'add',
+        name: '写文章',
+        component: () => import('@/views/article-manage/add-article/index'),
+        meta: { title: '写文章', icon: 'form' }
+      }
+    ]
+  },
   {
     path: '/nested',
     component: Layout,
     redirect: '/nested/menu1',
     name: 'Nested',
     meta: {
-      title: 'Nested',
+      title: 'Nested湿垃圾',
       icon: 'nested'
     },
     children: [

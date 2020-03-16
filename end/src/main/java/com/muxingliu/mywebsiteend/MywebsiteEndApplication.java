@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.muxingliu.mywebsiteend.dao")
 public class MywebsiteEndApplication {
 
+
     public static void main(String[] args) {
         SpringApplication.run(MywebsiteEndApplication.class, args);
     }
