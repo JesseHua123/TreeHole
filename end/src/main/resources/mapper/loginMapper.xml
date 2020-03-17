@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muxingliu.mywebsiteend.dao.LoginDao">
+    <select id="masterLogin" resultType="java.util.HashMap">
+        select * from master_user where account = #{account} and password = #{pwd} limit 1
+    </select>
+</mapper>
