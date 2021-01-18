@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+        <h3 class="title">圆木的树洞</h3>
       </div>
 
       <el-form-item prop="username">
@@ -43,13 +43,16 @@
 
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 
-      <div class="tips">
+      <!-- <div class="tips">
         <span style="margin-right:20px;">username: admin</span>
         <span> password: any</span>
-      </div>
+      </div> -->
 
     </el-form>
+          <footer class="footer"><span>Copyright © 2020-2025 我要学习网  runoob.com All Rights Reserved. 备案号：闽ICP备18021806号-2</span></footer>
+
   </div>
+  
 </template>
 
 <script>
@@ -74,8 +77,8 @@ export default {
     }
     return {
       loginForm: {
-        username: 'admin',
-        password: '111111'
+        username: '',
+        password: ''
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
@@ -169,6 +172,21 @@ $cursor: #fff;
     border-radius: 5px;
     color: #454545;
   }
+
+  .footer{
+width: 100%;
+height: 40px;
+line-height: 40px;
+position: fixed;
+bottom: 0;
+width: 100%;
+text-align: center;
+background: #000;
+color: #fff;
+font-family: Arial;
+font-size: 12px;
+letter-spacing: 1px;
+}
 }
 </style>
 
