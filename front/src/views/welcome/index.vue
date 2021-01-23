@@ -33,6 +33,7 @@ import Vue from 'vue'
 export default class Welcome extends Vue{
    
 
+
 }
 </script>
 <style lang="scss">
