@@ -24,5 +24,10 @@ export default new Router({
             name: '主页',
             component: () => import('./views/Home.vue'),
         },
+        {
+            path: '/welcome',
+            name: '欢迎',
+            component: () => import('./views/welcome/index.vue'),
+        }
     ],
 });

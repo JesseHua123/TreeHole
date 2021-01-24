@@ -20,6 +20,7 @@ export default async (type: string, url: string, data: any) => {
         response = await instance[type.toLowerCase()](url, { param: data });
     }
     console.log(response);
+    
 
 }
 
