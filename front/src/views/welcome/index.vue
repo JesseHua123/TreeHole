@@ -41,9 +41,7 @@ export default class Welcome extends Vue{
     background-image: url(../../assets/welcome.jpg);
     background-size: cover;
     width: 100%;
-    height:100%;
-    opacity: 90%;
-    
+    height:100%;    
 }
 .container{
     width:90%;
