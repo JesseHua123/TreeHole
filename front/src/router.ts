@@ -25,7 +25,7 @@ export default new Router({
             component: () => import('./views/Home.vue'),
         },
         {
-            path: '/welcome',
+            path: '/welcomes',
             name: '欢迎',
             component: () => import('./views/welcome/index.vue'),
         }
