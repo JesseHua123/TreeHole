@@ -32,6 +32,11 @@ import Layout from '@/layout'
  */
 export const constantRoutes = [
   {
+    path: '/welcome',
+    component: () => import('@/views/welcome/index'),
+    hidden: true
+  },
+  {
     path: '/login',
     component: () => import('@/views/login/index'),
     hidden: true
@@ -86,6 +91,18 @@ export const constantRoutes = [
         name: 'Form',
         component: () => import('@/views/form/index'),
         meta: { title: 'Form', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/podcast',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Podcast',
+        component: () => import('@/views/podcast/index'),
+        meta: { title: '播客上传', icon: 'form' }
       }
     ]
   },
