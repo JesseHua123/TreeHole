@@ -28,6 +28,13 @@ export default new Router({
             path: '/welcomes',
             name: '欢迎',
             component: () => import('./views/welcome/index.vue'),
+        },
+        {
+            path: '/',
+            name: '欢迎',
+            component: () => import('./views/welcome/index.vue'),
         }
+
+
     ],
 });

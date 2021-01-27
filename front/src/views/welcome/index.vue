@@ -6,25 +6,19 @@
              <div class="title"> <h1>我要学习网</h1></div>
             <div class="art-list">
                <p>Ant Design vue的使用</p>
-               <p>剪贴板操作 Clipboard API 教程</p>
-               <p>vue的使用和介绍</p>
+               <p>剪贴板操作 Clipboard API </p>
+               <p>个人资料</p>
+               <p>UI设计集</p>
+                <p>学习日记</p>
                <p>git的使用</p>
                 <p>vue的使用和介绍</p>
                <p>git的使用</p>
-                <p>vue的使用和介绍</p>
-               <p>git的使用</p>
-                <p>vue的使用和介绍</p>
-               <p>git的使用</p>
-                <p>git的使用</p>
-                <p>vue的使用和介绍</p>
-               <p>git的使用</p>
-                <p>git的使用</p>
-                <p>vue的使用和介绍</p>
-               <p>git的使用</p>
+                <p>SpringBoot鉴权介绍</p>
+              
             </div>
                
         </div>
-          <footer class="footer"><span v-on:click="beian">Copyright © 2020-2025 我要学习网  runoob.com All Rights Reserved. 备案号：闽ICP备18021806号-2</span></footer>
+          <footer class="footer"><span >Copyright © 2020-2025 我要学习网  runoob.com All Rights Reserved. <a  @click="openGov" > 备案号：闽ICP备18021806号-2</a></span></footer>
     </div>
 </template>
 
@@ -32,7 +26,11 @@
 import Vue from 'vue'
 export default class Welcome extends Vue{
 
-
+   public openGov(){
+       console.log("11111");
+       //href="https://beian.miit.gov.cn/#/Integrated/index"
+       window.location.href="https://beian.miit.gov.cn/";
+   }
 
 
 }
@@ -43,9 +41,7 @@ export default class Welcome extends Vue{
     background-image: url(../../assets/welcome.jpg);
     background-size: cover;
     width: 100%;
-    height:100%;
-    opacity: 90%;
-    
+    height:100%;    
 }
 .container{
     width:90%;
